@@ -21,4 +21,13 @@
         <servlet-name>getRequestInfoServlet</servlet-name>
         <url-pattern>/getRequestInfo.do</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getRequestDataServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.GetRequestDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getRequestDataServlet</servlet-name>
+        <url-pattern>/getRequestData.do</url-pattern>
+    </servlet-mapping>
 </web-app>
