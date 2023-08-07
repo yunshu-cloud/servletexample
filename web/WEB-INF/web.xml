@@ -12,4 +12,13 @@
         <servlet-name>helloworld</servlet-name>
         <url-pattern>/helloworld.do</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>getRequestInfoServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.GetRequestInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getRequestInfoServlet</servlet-name>
+        <url-pattern>/getRequestInfo.do</url-pattern>
+    </servlet-mapping>
 </web-app>
