@@ -82,4 +82,12 @@
         <servlet-name>fileDownServlet</servlet-name>
         <url-pattern>/fileDown.do</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>getBaseInfoServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.GetBaseInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getBaseInfoServlet</servlet-name>
+        <url-pattern>/getBaseInfo.do</url-pattern>
+    </servlet-mapping>
 </web-app>
