@@ -64,4 +64,13 @@
         <servlet-name>responseByteServlet</servlet-name>
         <url-pattern>/byte.do</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>redirectServelt</servlet-name>
+        <servlet-class>com.wangzhixiong.RedirectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>redirectServelt</servlet-name>
+        <url-pattern>/redirect.do</url-pattern>
+    </servlet-mapping>
 </web-app>
