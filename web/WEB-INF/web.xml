@@ -39,4 +39,12 @@
         <servlet-name>getRequestHeaderServlet</servlet-name>
         <url-pattern>/getRequestHeader.do</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>languageExampleServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.LanguageExampleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>languageExampleServlet</servlet-name>
+        <url-pattern>/language.do</url-pattern>
+    </servlet-mapping>
 </web-app>
