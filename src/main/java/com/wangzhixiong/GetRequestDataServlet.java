@@ -6,10 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Enumeration;
-import java.util.List;
+import java.util.*;
 
 public class GetRequestDataServlet extends HttpServlet
 {
@@ -26,7 +23,7 @@ public class GetRequestDataServlet extends HttpServlet
         String[] hobby = req.getParameterValues("hobby");
         List<String> list = Arrays.asList(hobby);
 
-        // 获取所有提交谁的key
+        // 获取所有提交数据的key
         Enumeration<String> parameterNames = req.getParameterNames();
         List<String> paraList = new ArrayList<>();
         while(parameterNames.hasMoreElements())
@@ -34,11 +31,25 @@ public class GetRequestDataServlet extends HttpServlet
             paraList.add(parameterNames.nextElement());
         }
 
+        // 使用Map结构获取提交数据
+        Map<String, String[]> parameterMap = req.getParameterMap();
+        Iterator<Map.Entry<String,String[]>> iterator = parameterMap.entrySet().iterator();
+
+
         PrintWriter pw = resp.getWriter();
         pw.println("UserName:"+username);
         pw.println("Password:"+userpwd);
         pw.println("Hobby:"+list);
         pw.println("Names:"+paraList);
+
+        while(iterator.hasNext())
+        {
+            Map.Entry<String,String[]> entry = iterator.next();
+            String key = entry.getKey();
+            String[] value = entry.getValue();
+            pw.println(key+" = "+ Arrays.asList(value));
+
+        }
 
         pw.flush();
         pw.close();
