@@ -47,4 +47,12 @@
         <servlet-name>languageExampleServlet</servlet-name>
         <url-pattern>/language.do</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>requestCharacterServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.ResponseCharacterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>requestCharacterServlet</servlet-name>
+        <url-pattern>/character.do</url-pattern>
+    </servlet-mapping>
 </web-app>
