@@ -73,4 +73,13 @@
         <servlet-name>redirectServelt</servlet-name>
         <url-pattern>/redirect.do</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>fileDownServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.FileDownServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fileDownServlet</servlet-name>
+        <url-pattern>/fileDown.do</url-pattern>
+    </servlet-mapping>
 </web-app>
