@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
 
+/**
+ * 获取form表单请求体信息
+ */
 public class GetRequestDataServlet extends HttpServlet
 {
     @Override

@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Enumeration;
 
+/**
+ * 后去请求头信息
+ */
 public class GetRequestHeaderServlet extends HttpServlet
 {
     @Override

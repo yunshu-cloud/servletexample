@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * 获取请求头的案例
+ */
 public class LanguageExampleServlet extends HttpServlet
 {
     @Override
