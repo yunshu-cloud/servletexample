@@ -13,8 +13,12 @@ public class GetRequestDataServlet extends HttpServlet
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
+        // 设置请求编码 控制台输出乱码解决
+        req.setCharacterEncoding("utf-8");
+
         // 获取用户名
         String username = req.getParameter("username");
+        System.out.println(username);
 
         // 获取用户密码
         String userpwd =  req.getParameter("userpwd");

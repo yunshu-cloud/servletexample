@@ -30,4 +30,13 @@
         <servlet-name>getRequestDataServlet</servlet-name>
         <url-pattern>/getRequestData.do</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>getRequestHeaderServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.GetRequestHeaderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getRequestHeaderServlet</servlet-name>
+        <url-pattern>/getRequestHeader.do</url-pattern>
+    </servlet-mapping>
 </web-app>
