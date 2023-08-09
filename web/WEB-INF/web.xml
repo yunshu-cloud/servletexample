@@ -112,4 +112,13 @@
         <servlet-name>contextReadInfoServlet</servlet-name>
         <url-pattern>/readInfo.do</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>globalContainerServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.GlobalContainerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>globalContainerServlet</servlet-name>
+        <url-pattern>/global.do</url-pattern>
+    </servlet-mapping>
 </web-app>
