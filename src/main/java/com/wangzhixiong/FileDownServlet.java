@@ -1,5 +1,6 @@
 package com.wangzhixiong;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,8 +21,14 @@ public class FileDownServlet extends HttpServlet
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
+        // 获取ServletContext对象
+        ServletContext servletContext = this.getServletContext();
+
+        // 路径转换
+        String realPath = servletContext.getRealPath("image/sakura.jpg");
+        System.out.println(realPath);
         // 读取下载文件
-        File file = new File("/Users/wangzhixiong/Pictures/sakura.jpg");
+        File file = new File(realPath);
         InputStream is = new FileInputStream(file);
         byte[] buff = new byte[is.available()];
         is.read(buff);
