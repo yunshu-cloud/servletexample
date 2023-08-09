@@ -55,4 +55,13 @@
         <servlet-name>requestCharacterServlet</servlet-name>
         <url-pattern>/character.do</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>responseByteServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.ResponseByteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>responseByteServlet</servlet-name>
+        <url-pattern>/byte.do</url-pattern>
+    </servlet-mapping>
 </web-app>
