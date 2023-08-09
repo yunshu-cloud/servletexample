@@ -4,6 +4,18 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+
+    <context-param>
+        <param-name>name</param-name>
+        <param-value>yunshu</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>sex</param-name>
+        <param-value>male</param-value>
+    </context-param>
+
+
     <servlet>
         <servlet-name>helloworld</servlet-name>
         <servlet-class>com.wangzhixiong.HelloWorld</servlet-class>
@@ -89,5 +101,15 @@
     <servlet-mapping>
         <servlet-name>getBaseInfoServlet</servlet-name>
         <url-pattern>/getBaseInfo.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>contextReadInfoServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.ContextReadInfoServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>contextReadInfoServlet</servlet-name>
+        <url-pattern>/readInfo.do</url-pattern>
     </servlet-mapping>
 </web-app>
