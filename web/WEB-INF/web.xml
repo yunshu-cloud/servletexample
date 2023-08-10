@@ -13,7 +13,6 @@
         <param-value>male</param-value>
     </context-param>
 
-
     <servlet>
         <servlet-name>helloworld</servlet-name>
         <servlet-class>com.wangzhixiong.HelloWorld</servlet-class>
@@ -182,4 +181,7 @@
         <servlet-name>getHttpSessionDataServlet</servlet-name>
         <url-pattern>/getSessionData.do</url-pattern>
     </servlet-mapping>
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
 </web-app>
