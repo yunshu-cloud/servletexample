@@ -181,6 +181,18 @@
         <servlet-name>getHttpSessionDataServlet</servlet-name>
         <url-pattern>/getSessionData.do</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>welcomeSessionServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.WelcomeSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>welcomeSessionServlet</servlet-name>
+        <url-pattern>/welcomeSession.do</url-pattern>
+    </servlet-mapping>
+    
+    
+    
     <session-config>
         <session-timeout>1</session-timeout>
     </session-config>
