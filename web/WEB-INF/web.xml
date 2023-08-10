@@ -164,4 +164,13 @@
         <servlet-name>welcomeServlet</servlet-name>
         <url-pattern>/welcome.do</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>createHttpSession</servlet-name>
+        <servlet-class>com.wangzhixiong.CreateHttpSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createHttpSession</servlet-name>
+        <url-pattern>/createSession.do</url-pattern>
+    </servlet-mapping>
 </web-app>
