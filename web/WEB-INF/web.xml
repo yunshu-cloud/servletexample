@@ -136,4 +136,22 @@
         <servlet-name>getConfigServlet</servlet-name>
         <url-pattern>/getConfig.do</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>createCookieServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.CreateCookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createCookieServlet</servlet-name>
+        <url-pattern>/cookie.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>getCookieDataServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.GetCookieDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getCookieDataServlet</servlet-name>
+        <url-pattern>/getCookie.do</url-pattern>
+    </servlet-mapping>
 </web-app>
