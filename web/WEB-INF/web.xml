@@ -154,4 +154,14 @@
         <servlet-name>getCookieDataServlet</servlet-name>
         <url-pattern>/getCookie.do</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>welcomeServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.WelcomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>welcomeServlet</servlet-name>
+        <url-pattern>/welcome.do</url-pattern>
+    </servlet-mapping>
 </web-app>
