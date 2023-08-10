@@ -9,9 +9,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * 创建HttpSession对象
+ *获取HttpSession中的数据
  */
-public class CreateHttpSessionServlet extends HttpServlet
+public class GetHttpSessionDataServlet extends HttpServlet
 {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
@@ -22,17 +22,16 @@ public class CreateHttpSessionServlet extends HttpServlet
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
-        // 创建HttpSession对象
+        // 获取HttpSession对象
         HttpSession session = req.getSession();
-        System.out.println(session);
 
-        // 存放数据
-        session.setAttribute("name","yunshu");
-        session.setAttribute("sex","male");
-        String id = session.getId();
+        // 获取数据
+        String name = (String) session.getAttribute("name");
+        String sex = (String) session.getAttribute("sex");
 
         PrintWriter pw = resp.getWriter();
-        pw.println("Create Session Successfully! SessionId:"+id);
+        pw.println("Name:"+name);
+        pw.println("Sex:"+sex);
         pw.flush();
         pw.close();
     }

@@ -173,4 +173,13 @@
         <servlet-name>createHttpSession</servlet-name>
         <url-pattern>/createSession.do</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>getHttpSessionDataServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.GetHttpSessionDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getHttpSessionDataServlet</servlet-name>
+        <url-pattern>/getSessionData.do</url-pattern>
+    </servlet-mapping>
 </web-app>
