@@ -191,6 +191,15 @@
         <url-pattern>/welcomeSession.do</url-pattern>
     </servlet-mapping>
     
+    <servlet>
+        <servlet-name>autoStartServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.AutoStartServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>autoStartServlet</servlet-name>
+        <url-pattern>/autoStart.do</url-pattern>
+    </servlet-mapping>
     
     
     <session-config>

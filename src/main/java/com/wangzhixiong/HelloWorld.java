@@ -12,7 +12,6 @@ public class HelloWorld extends HttpServlet
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
-
         PrintWriter pw = resp.getWriter(); // 向目标客户端输出内容的字符输出流
         pw.println("<!DOCTYPE html>");
         pw.println("<html lang=en>");
