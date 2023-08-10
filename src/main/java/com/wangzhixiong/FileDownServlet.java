@@ -24,8 +24,9 @@ public class FileDownServlet extends HttpServlet
         // 获取ServletContext对象
         ServletContext servletContext = this.getServletContext();
 
+        String path = (String) servletContext.getAttribute("path");
         // 路径转换
-        String realPath = servletContext.getRealPath("image/sakura.jpg");
+        String realPath = servletContext.getRealPath(path+"/sakura.jpg");
         System.out.println(realPath);
         // 读取下载文件
         File file = new File(realPath);

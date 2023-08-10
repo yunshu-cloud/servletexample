@@ -194,6 +194,10 @@
     <servlet>
         <servlet-name>autoStartServlet</servlet-name>
         <servlet-class>com.wangzhixiong.AutoStartServlet</servlet-class>
+        <init-param>
+            <param-name>path</param-name>
+            <param-value>image</param-value>
+        </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
