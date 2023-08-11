@@ -99,6 +99,16 @@
         <servlet-name>getBaseInfoServlet</servlet-name>
         <url-pattern>/getBaseInfo.do</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>threadSafeServlet</servlet-name>
+        <servlet-class>com.wangzhixiong.ThreadSafeServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>threadSafeServlet</servlet-name>
+        <url-pattern>/safe.do</url-pattern>
+    </servlet-mapping>
     
     <servlet>
         <servlet-name>contextReadInfoServlet</servlet-name>
