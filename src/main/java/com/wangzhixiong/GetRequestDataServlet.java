@@ -17,7 +17,7 @@ public class GetRequestDataServlet extends HttpServlet
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
         // 设置请求编码 控制台输出乱码解决
-        req.setCharacterEncoding("utf-8");
+//        req.setCharacterEncoding("utf-8");
 
         // 获取用户名
         String username = req.getParameter("username");
@@ -42,6 +42,7 @@ public class GetRequestDataServlet extends HttpServlet
         Map<String, String[]> parameterMap = req.getParameterMap();
         Iterator<Map.Entry<String,String[]>> iterator = parameterMap.entrySet().iterator();
 
+        resp.setContentType("text/plain;charset=utf-8");
 
         PrintWriter pw = resp.getWriter();
         pw.println("UserName:"+username);
