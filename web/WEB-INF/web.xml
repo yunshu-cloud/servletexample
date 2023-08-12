@@ -238,6 +238,27 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
     
+    <listener>
+        <listener-class>com.wangzhixiong.listener.ServletContextLifeCycleListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.wangzhixiong.listener.ServletContextAttrListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.wangzhixiong.listener.HttpSessionLifeCycleListener</listener-class>
+    </listener>
+    
+    <listener>
+        <listener-class>com.wangzhixiong.listener.HttpSessionAttrListener</listener-class>
+    </listener>
+    
+    <listener>
+        <listener-class>com.wangzhixiong.listener.HttpServletRequestLifeCycleListener</listener-class>
+    </listener>
+    
+    <listener>
+        <listener-class>com.wangzhixiong.listener.HttpServletRequestAttrListener</listener-class>
+    </listener>
     <session-config>
         <session-timeout>1</session-timeout>
     </session-config>
